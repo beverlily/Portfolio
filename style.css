@@ -1,0 +1,243 @@
+/*1. DEFAULT OVERRIDES*/
+html{
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Lato', Sans-Serif;
+}
+
+*, *::before, *::after{
+  box-sizing: inherit;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  background-image: url("images/background.png");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 1000vh;
+}
+
+audio{
+  display: none;
+}
+
+img{
+  padding: 0;
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+  transition: all 0.5s;
+}
+
+h1{
+	margin: 0;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+}
+
+li{
+  display: inline-block;
+}
+
+section{
+	padding: 0px 100px;
+}
+/*
+section:not(#welcome){
+	border-top: 1px solid #eaeaea;
+}
+
+section:not(#contact){
+	border-bottom: 1px solid #eaeaea;
+} */
+
+/*2. GENERAL CLASSES*/
+.page-wrapper{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.flex-container{
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.hidden{
+  position: absolute;
+  left: -10000px;
+}
+
+.button{
+  border: 1px solid white;
+  padding: 5px;
+  border-radius: 5px;
+  display: inline-block;
+  transition: all .5s;
+}
+
+.button:hover{
+  background-color: #3b3948;
+  box-shadow: 0 0 10px rgba(255,255,255, 1);
+  cursor: pointer;
+}
+
+/*WELCOME*/
+.star{
+	position: absolute;
+	background-color: #fff;
+	border-radius: 50%;
+	z-index: -1;
+}
+
+.name{
+	font-size: 3rem;
+}
+
+.title{
+	font-style: italic;
+	font-size: 1.25rem;
+}
+
+#welcome{
+	padding: 100px;
+	font-size: 1.25rem;
+	position: relative;
+	height: 100vh;
+	margin: 0;
+}
+
+
+/*MAIN*/
+#main{
+	color: #eaeaea;
+}
+
+
+#main::after{
+	  height: 300vh;
+	  content: "";
+	  background: url("images/clouds.png");
+	  opacity: 0.15;
+	  top: 0;
+	  left: 0;
+	  bottom: 0;
+	  right: 0;
+	  position: absolute;
+  	  background-position: center;
+	  background-repeat: no-repeat;
+  	  background-size: cover;
+	  z-index: -1;
+}
+
+/*4. HEADER*/
+#header, #footer{
+  background-color: rgba(0,0,0,0.25);
+  color: white;
+}
+
+#header{
+  border-bottom: 1px solid #252525;
+}
+
+#header .page-wrapper{
+  margin: 0;
+}
+
+#header-nav{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#header-nav a{
+  display: inline-block;
+  margin-left: 20px;
+  color: white;
+}
+
+#header-nav a:hover{
+	color: cyan;
+}
+
+#header-logo{
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 30px;
+  margin-left: 50px;
+}
+
+/*FOOTER*/
+#footer{
+	justify-content: center;
+    margin: 0;
+}
+/*12. SKIP TO MAIN*/
+#skip-to-main:focus{
+   position: relative;
+   left: 0;
+}
+
+@keyframes glow{
+  0% , 100%{
+	opacity: 0.25;
+    box-shadow: 0 0 15px rgba(255,255,255, 0);
+  }
+  50%{
+	opacity: 1;
+    box-shadow: 0 0 35px rgba(255,255,255, 1);
+  }
+}
+
+
+/*PROJECTS*/
+#projects{
+	position: relative;
+}
+
+#projects img{
+	height: 300px;
+	width: 300px;
+}
+
+.project{
+	flex: 1;
+}
+
+#projects::after{
+	background-image:
+}
+
+#contact{
+	position: relative;
+	height: 100vh;
+}
+
+#contact::after{
+	  content: "";
+	  background: url("images/mountains.png");
+	  opacity: 1;
+	  top: 0;
+	  left: 0;
+	  bottom: 0;
+	  right: 0;
+	  position: absolute;
+  	  background-position: center;
+	  background-repeat: no-repeat;
+  	  background-size: cover;
+	  height: 100vh;
+	  z-index: -1;
+}
+
+/*11. MEDIA QUERIES*/
+@media screen and (max-width:1000px) {
+  #main::after{
+
+  }
+}
