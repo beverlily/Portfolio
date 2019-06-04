@@ -1,5 +1,27 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto|Open+Sans&display=swap');
 
+/************************************************
+ * TABLE OF CONTENTS
+ * =================
+ * 1. DEFAULT OVERRIDES
+ * 2. GENERAL CLASSES
+ * 3. CLOUDS
+ * 4. MOON
+ * 5. STARS
+ * 6. SCROLL DOWN ARROW
+ * 7. MENU
+ * 8. HEADER
+ * 9. MAIN
+ * 10. WELCOME SECTION
+ * 11. PROJECTS SECTION
+ * 12. SKILLS SECTION
+ * 13. CONTACT SECTION
+ * 14. FOOTER
+ * 15. SKIP TO MAIN
+ * 16. CSS KEYFRAME ANIMATIONS
+ * 17. MEDIA QUERIES
+ ***********************************************/
+
 /*1. DEFAULT OVERRIDES*/
 html{
   box-sizing: border-box;
@@ -122,7 +144,7 @@ section h2{
 	font-size: 0.75rem;
 }
 
-/*CLOUDS*/
+/*3. CLOUDS*/
 .cloud{
   position: absolute;
   background-size: contain;
@@ -156,7 +178,7 @@ section h2{
     height: 300px;
 }
 
-/*MOON*/
+/*4. MOON*/
 #moon{
 	position: absolute;
 	top: 36px;
@@ -176,7 +198,7 @@ section h2{
 	border-radius: 50%;
 }
 
-/*STARS*/
+/*5. STARS*/
 .star{
 	background-color: #fff;
 }
@@ -250,7 +272,24 @@ section h2{
 	font-size: .6rem;
 }
 
-/*SCROLL DOWN ARROW*/
+#star9{
+	top: 150px;
+	left: 80%;
+}
+
+#star10{
+	left: 5%;
+	top: 170px;
+	font-size: 0.25rem;
+}
+
+#star11{
+	top: 275px;
+	left: 60%;
+	font-size: 0.35rem;
+}
+
+/*6. SCROLL DOWN ARROW*/
 #scroll-down-arrow::before{
 	content: "scroll down! :)";
 	font-size: 0.75rem;
@@ -273,7 +312,7 @@ section h2{
 }
 
 
-/*MENU*/
+/*7. MENU*/
 #main-nav-links li{
 	display: inline-block;
 }
@@ -300,7 +339,7 @@ section h2{
 	text-shadow: 0px 0px 15px white;
 }
 
-/*HEADER*/
+/*8. HEADER*/
 #header, #footer{
   width: 100%;
   padding: 10px;
@@ -315,10 +354,6 @@ section h2{
 
 #header-content{
 	align-items: center;
-}
-
-.align-top{
-	align-items: flex-start !important;
 }
 
 #header-logo{
@@ -341,8 +376,17 @@ section h2{
 	font-size: 0.75rem;
 }
 
+.align-top{
+	align-items: flex-start !important;
+}
 
-/*WELCOME SECTION*/
+/*9. MAIN*/
+#main{
+	color: #eaeaea;
+	padding-top: 64px; /*height of header*/
+}
+
+/*10. WELCOME SECTION*/
 #welcome{
 	font-size: 1.25rem;
 	margin-bottom: 150px;
@@ -361,32 +405,7 @@ section h2{
 	margin-left: 4px;
 }
 
-/*SKILLS SECTION*/
-#skills{
-	background-color: rgba(0,0,0,.5);
-}
-
-#skills-list{
-	align-items: center;
-}
-
-#skills-list img, .white-background{
-	width: 120px;
-}
-
-#skills-list img{
-	margin-right: 30px;
-	margin-bottom: 30px;
-}
-
-.white-background{
-	height: 120px;
-	padding: 10px;
-	object-fit: contain;
-	background-color: rgba(255,255,255,0.9);
-}
-
-/*PROJECTS*/
+/*11. PROJECTS SECTION*/
 #projects img{
 	height: 400px;
 	width: 400px;
@@ -441,28 +460,35 @@ section h2{
 	margin-bottom: 25px;
 }
 
-/*Contact Section*/
+/*12. SKILLS SECTION*/
+#skills{
+	background-color: rgba(0,0,0,.5);
+}
+
+#skills-list{
+	align-items: center;
+}
+
+#skills-list img, .white-background{
+	width: 120px;
+}
+
+#skills-list img{
+	margin-right: 30px;
+	margin-bottom: 30px;
+}
+
+.white-background{
+	height: 120px;
+	padding: 10px;
+	object-fit: contain;
+	background-color: rgba(255,255,255,0.9);
+}
+
+/*13. CONTACT SECTION*/
 #email-button{
 	margin-top: 20px;
 	color: white;
-}
-
-
-#star9{
-	top: 150px;
-	left: 80%;
-}
-
-#star10{
-	left: 5%;
-	top: 170px;
-	font-size: 0.25rem;
-}
-
-#star11{
-	top: 275px;
-	left: 60%;
-	font-size: 0.35rem;
 }
 
 #contact-icons i{
@@ -474,26 +500,21 @@ section h2{
 	margin-right: 20px;
 }
 
-/*MAIN*/
-#main{
-	color: #eaeaea;
-	padding-top: 64px; /*height of header*/
-}
 
-/*FOOTER*/
+/*14. FOOTER*/
 #footer{
 	justify-content: center;
     margin: 0;
 	background-color: black;
 }
 
-/*SKIP TO MAIN*/
+/*15. SKIP TO MAIN*/
 #skip-to-main:focus{
    position: relative;
    left: 0;
 }
 
-/*CSS KEYFRAME ANIMATIONS*/
+/*16. CSS KEYFRAME ANIMATIONS*/
 @keyframes bounce{
   0%, 100%{
     transform: translate(0px, 0px);
@@ -523,7 +544,7 @@ section h2{
   }
 }
 
-/*11. MEDIA QUERIES*/
+/*17. MEDIA QUERIES*/
 @media screen and (max-width:1150px) {
 	#moon{
 		height: 142.5px;
@@ -567,7 +588,6 @@ section h2{
 	}
 }
 
-/*80*/
 @media screen and (max-width:1110px) {
 	#name{
 	  font-size: 4rem;
