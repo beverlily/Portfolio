@@ -207,7 +207,7 @@ section h2 {
 #moon {
   position: relative;
   top: -200px;
-  left: 55%;
+  left: 58%;
   box-shadow: 50px 30px 0 15px #fde08a;
   border-radius: 50%;
 }
@@ -243,7 +243,7 @@ section h2 {
 
 #star1 {
   top: 42%;
-  right: 27%;
+  right: 25%;
   font-size: 1rem;
 }
 
