@@ -133,6 +133,11 @@ const hideSections = () => {
   });
 };
 
+const setCopyright = () => {
+  const currentYear = new Date().getFullYear();
+  $("#copyright").html(`&copy; ${currentYear} Beverly Li`);
+};
+
 // gets main navigation links and main sections
 const mainNavLinks = document.querySelectorAll(".main-nav-link");
 const mainSections = document.querySelectorAll("section");
@@ -166,6 +171,7 @@ $(document).ready(() => {
     $("#header-content").toggleClass("align-top");
   });
 
+  setCopyright();
   hideSections();
   generateStars();
   addEmailAnimation();
