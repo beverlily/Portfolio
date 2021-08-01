@@ -175,18 +175,17 @@ section h2 {
 
 #cloud1 {
   top: -150px;
-  right: -25px;
+  right: -50px;
   width: 295px;
   height: 175px;
 }
 
 #cloud2 {
-  top: -50px;
-  left: -175px;
-  width: 350px;
+  top: -70px;
+  left: -180px;
+  width: 380px;
   height: 175px;
   transform: scaleX(-1);
-  opacity: 0.8;
 }
 
 #cloud3 {
