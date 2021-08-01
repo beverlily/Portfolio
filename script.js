@@ -64,11 +64,11 @@ const fadeInHeader = () => {
   const windowTop = $(window).scrollTop();
   // header will have a solid background when not at the top of the page
   if (windowTop > 0) {
-    header.addClass("blue-header");
+    header.addClass("header");
   } else {
     // background of header will be transparent at the top of the page for non responsive
     if (!$("#main-nav-links").hasClass("responsive-menu"))
-      header.removeClass("blue-header");
+      header.removeClass("header");
     scrollArrow.fadeIn();
   }
 };
@@ -165,7 +165,7 @@ $(document).ready(() => {
   const hamburgerMenu = document.getElementById("hamburger-menu-icon");
 
   hamburgerMenu.addEventListener("click", function () {
-    header.addClass("blue-header");
+    header.addClass("header");
     $("#main-nav-links").toggleClass("responsive-menu");
     $("#main-nav-links").find("li").toggleClass("block");
     $("#header-content").toggleClass("align-top");
