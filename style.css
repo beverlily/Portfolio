@@ -41,9 +41,9 @@ body {
   background: #1c1c26; /*fallback*/
   background-image: linear-gradient(
     to bottom,
-    #2a2a39,
-    #191b27,
-    #171b27,
+    #243952,
+    #181b27,
+    #161b27,
     #151b27,
     #151924,
     #151721,
@@ -383,7 +383,7 @@ section h2 {
 }
 
 .header {
-  background-color: #2a2a3a;
+  background-color: #243952;
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
 }
 
@@ -480,8 +480,8 @@ section h2 {
 
 /*12. SKILLS SECTION*/
 #skills {
-  box-shadow: 0px 0px 10px rgba(42, 42, 58, 0.3);
-  background: rgba(42, 42, 58, 0.25);
+  box-shadow: 0px 0px 10px rgba(36, 57, 82, 0.2);
+  background: rgba(36, 57, 82, 0.15);
 }
 
 #skills-list {
@@ -524,8 +524,8 @@ section h2 {
 #footer {
   justify-content: center;
   margin: 0;
-  border-top: 1px solid #2a2a3a;
-  box-shadow: 0px 0px 10px rgba(42, 42, 58, 0.75);
+  border-top: 1px solid #243952;
+  box-shadow: 0px 0px 10px rgba(36, 57, 82, 0.75);
 }
 
 /*15. SKIP TO MAIN*/
