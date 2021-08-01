@@ -38,7 +38,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background: #1c1c26; /*fallback*/
+  background: #161b27; /*fallback*/
   background-image: linear-gradient(
     to bottom,
     #243952,
