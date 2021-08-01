@@ -1,255 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>Beverly Li: Full Stack Web Developer</title>
-		<meta charset="utf-8" />
-		<link rel="icon" href="images/bluelogo.png">
-		<link rel="stylesheet" type="text/css" href="style.css" />
-		<meta name="viewport" content="width=device-width">
-	</head>
-	<body>
-	    <a id="skip-to-main" class="hidden" href="#main">Skip to main content</a>
-	   	<header id="header">
-	   	   <div id="header-content" class="page-wrapper flex-container">
-	   		  <div id="header-logo" class="flex-container">
-				 <a href=""><img src="images/logo.png" alt="Beverly's
-	   			 Site Logo" /></a>
-				 <h1>BEVERLY LI
-				 <span class="small-title">Full Stack Web Developer</span></h1>
-			  </div>
-	   		  <nav id="header-nav">
-	   			 <h2 class="hidden">Main Navigation</h2>
-				 <div id="hamburger-menu-icon">
-					 <i class="fa fa-bars"></i>
-				 </div>
-	   			 <ul id="main-nav-links">
-	   				<li><a href="#" class="main-nav-link" data-link="#welcome">Home</a></li><!--
-	   			 --><li><a href="#" class="main-nav-link" data-link="#projects">Projects</a></li><!--
-				 --><li><a href="#" class="main-nav-link" data-link="#skills">Skills</a></li><!--
-	   			 --><li><a href="#" class="main-nav-link" data-link="#contact">Contact</a></li>
-	   			 </ul>
-	   		  </nav>
-			  <div id="contact-icons">
-				  <a href="https://www.github.com/beverlily" target="_blank" aria-label="Visit Beverly's Github"><i class="fab fa-github" aria-hidden="true" title="Visit Beverly's Github"></i></a>
-				  <a href="mailto:beverly.li@live.com" aria-label="Email Beverly">
-					  <i class="icon fas fa-envelope last" aria-hidden="true" title="Email Beverly"></i>
-				  </a>
-			  </div>
-	   	   </div>
-	   	</header>
-	   	<main id="main">
-			<section id="welcome">
-				<div class="page-wrapper">
-					<div id="welcome-content" class="main-content">
-						<div id="name">Beverly Li</div>
-						<div id="description">
-							Hi, I'm Beverly! I'm a full stack web developer in Toronto.
-							<br />
-							I love to code beautiful and functional websites.
-						</div>
-				 	</div>
-					<div id="moon"></div>
-					<div class="cloud" id="cloud1"></div>
-					<div class="cloud" id="cloud2"></div>
-					<div class="bigStars">
-						<i id="star1" class="fas fa-star"></i>
-						<i id="star2" class="fas fa-star"></i>
-						<i id="star3" class="fas fa-star"></i>
-					</div>
-				</div>
-				<button id="scroll-down-arrow"><i class="fas fa-chevron-down"><span class="hidden">scroll down</span></i></button>
-			</section>
-			<section id="projects">
-				<div class="page-wrapper">
-					<div id="project-content" class="main-content">
-						<h2 class="fade">Projects</h2>
-						<br />
-						<ul id="project-list">
-							<li class="project flex-container fade">
-									<a href="https://makeupstory.azurewebsites.net/" target="_blank">
-										<img src="images/projects/makeupstory.png" alt="makeup brands and makeup product tracking application" title="Visit Website"/>
-									</a>
-									<div class="project-information">
-										<h3>MakeupStory</h3>
-										<div class="technologies">
-											C# / ASP.NET / MSSQL / HTML5 / CSS3
-										</div>
-										<div class="project-links">
-											<a href="https://makeupstory.azurewebsites.net/" target="_blank"><i class="icon fas fa-globe-americas"></i> Visit the Website </a>
-											<a href="https://www.github.com/beverlily/MakeupStory" target="_blank"><i class="icon fab fa-github"></i> View on Github </a>
-										</div>
-										<br />
-										<div>
-											<h4 class="hidden">Description</h4>
-											<p>
-												MakeupStory is a makeup CMS that allows users to keep track of the
-												makeup products and makeup brands that they have purchased from. Users can give ratings, recommend products, as well as keep track of when they opened a makeup product. A useful feature of this application is that it automatically
-												calculates the expiry date of makeup products so users know when their makeup products are about to expire or have expired.
-											</p>
-											<br />
-											<h4>Technology</h4>
-											<p>
-												This was an individual project built in ASP.NET MVC 5. Helpers were implemented to help reduce redundant code in the views.
-												As well, a search feature was implemented so that users can easily look up their makeup products and brands.
-										    </p>
-										</div>
-									</div>
-							</li>
-							<li class="project flex-container fade">
-									<div class="project-information">
-										<h3>A Rainy Night in Winter</h3>
-										<div class="technologies">
-											JavaScript / JQuery / CSS3 / HTML5
-										</div>
-										<div class="project-links">
-											<a href="http://rainy-night.beverlyli.com" target="_blank"><i class="icon fas fa-globe-americas"></i> Visit the Website </a>
-											<a href="https://www.github.com/beverlily/A-Rainy-Night-in-Winter" target="_blank"><i class="icon fab fa-github"></i> View on Github </a>
-										</div>
-										<br />
-										<div>
-											<h4 class="hidden">Description</h4>
-											<p>
-												A Rainy Night in Winter is a simple and fun catch game. It's a rainy night in winter and legend has it that
-												rain in the winter brings luck. The goal of this game is for users to catch as many raindrops as they can.
-											</p>
-											<br />
-											<h4>Technology</h4>
-											<p>
-												This was an individual project coded in HTML5, CSS3, JavaScript, and JQuery with a focus on implementing CSS animations.
-											</p>
-										</div>
-									</div>
-									<a href="http://rainy-night.beverlyli.com" target="_blank">
-										<img src="images/projects/rainynight.png" alt="raindrop catching game" title="Visit Website"/>
-									</a>
-							</li>
-							<li class="project flex-container fade">
-									<a href="http://delanh.com/tollo/" target="_blank">
-										<img src="images/projects/tollo.jpg" alt="weight lifting application" title="Visit Website"/>
-									</a>
-									<div class="project-information">
-										<h3>Tollo</h3>
-										<div class="technologies">
-											PHP / MySQL / JavaScript / JQuery / Bootstrap / HTML / CSS
-										</div>
-										<div class="project-links">
-											<a href="http://delanh.com/tollo/" target="_blank"><i class="icon fas fa-globe-americas"></i> Visit the Website </a>
-											<a href="https://www.github.com/beverlily/Tollo" target="_blank"><i class="icon fab fa-github"></i> View on Github </a>
-										</div>
-										<br />
-										<div>
-											<h4 class="hidden">Description</h4>
-											<p>
-												Tollo is a fitness application for weight-lifting, strength-training, and fitness.
-												It allows users to save routines, set goals, and note their progress.
-											</p>
-											<br />
-											<h4>Technology</h4>
-											<p>
-												This was a group project coded in PHP, with MySQL for the database.
-												I was responsible for the goals, measurements, and exercises feature.
-												For my features, I used JQuery Ajax for a smoother user experience.
-											</p>
-										</div>
-									</div>
-							</li>
-							<li class="project flex-container fade">
-									<div class="project-information">
-										<h3>Spice Girls + 1 Restaurant</h3>
-										<div class="technologies">
-											JavaScript / JQuery / HTML / CSS
-										</div>
-										<div class="project-links">
-											<a href="http://restaurant.beverlyli.com" target="_blank"><i class="icon fas fa-globe-americas"></i> Visit the Website </a>
-											<a href="https://www.github.com/beverlily/Spice-Girls-Restaurant" target="_blank"><i class="icon fab fa-github"></i> View on Github </a>
-										</div>
-										<br />
-										<div>
-											<h4 class="hidden">Description</h4>
-											<p>
-												This is a website for the Spice Girls + 1 restaurant. This restaurant serves spicy and healthy dishes.
-											</p>
-											<br />
-											<h4>Technology</h4>
-											<p>
-												This was a group project coded in JavaScript and JQuery. I coded the about page, gift card page, and locations page.
-												Regular expressions were used for form validation in the gift card page. For the locations page, Google Maps API was used.
-											</p>
-										</div>
-									</div>
-									<a href="http://restaurant.beverlyli.com" target="_blank">
-										<img src="images/projects/spicegirls.png" alt="makeupstory" title="Visit Website"/>
-								    </a>
-							</li>
-						</ul>
-					</div>
-					<div class="bigStars">
-						<i id="star4" class="fas fa-star"></i>
-						<i id="star5" class="fas fa-star"></i>
-						<i id="star6" class="fas fa-star"></i>
-					</div>
-				</div>
-			</section>
-			<section id="skills">
-				<div class="page-wrapper">
-					<div id="skills-content" class="main-content fade">
-						<h2>Skills</h2>
-						<ul id="skills-list" class="flex-container">
-							<li><img src="images/skills/javascript.svg" title="JavaScript" alt="JavaScript logo"/></li>
-							<li><img src="images/skills/net.svg" title="ASP.NET" class="white-background" alt="Microsoft .Net logo" /></li>
-							<li><img src="images/skills/php.svg" title="PHP" alt="PHP logo" /></li>
-							<li><img src="images/skills/html-5.svg" title="HTML5" alt="HTML5 logo" /></li>
-							<li><img src="images/skills/css-3.svg" title="CSS3" alt="CSS3 logo" />
-							<li><img src="images/skills/jquery.svg" title="jQuery" class="white-background" alt="jQuery logo" />
-							<li><img src="images/skills/mysql.svg" title="MySQL" class="white-background" alt="MySQL logo" /></li>
-							<li><img src="images/skills/microsoft-sql-server.svg" title="Microsoft SQL Server" class="white-background" alt="MSSQL logo" /></li>
-							<li><img src="images/skills/oracle.svg" title="Oracle Database" class="white-background" alt="Oracle logo" /></li>
-							<li><img src="images/skills/bootstrap-4.svg" title="Bootstrap 4" alt="Bootstrap4 4 logo" />
-							<li><img src="images/skills/git.svg" title="Git" alt="Git logo" class="white-background" /></li>
-							<li><img src="images/skills/adobe-photoshop.svg" title="Adobe Photoshop" alt="Adobe Photoshop logo" /></li>
-							<li><img src="images/skills/adobe-illustrator.svg" title="Adobe Illustrator" alt="Adobe Illustrator logo" /></li>
-							<li><img src="images/skills/adobe-xd.svg" title="Adobe Xd" alt="Adobe Xd logo" /></li>
-						</ul>
-					</div>
-					<div class="bigStars">
-						<i id="star7" class="fas fa-star"></i>
-						<i id="star8" class="fas fa-star"></i>
-					</div>
-				</div>
-			</section>
-			<section id="contact">
-				<div class="page-wrapper">
-					<div id="contact-content" class="main-content fade">
-						<h2>Contact Me</h2>
-						<p>Feel free to contact me anytime!</p>
-						<div>
-							<a href="mailto:beverly.li@live.com"><i class="icon fas fa-envelope"></i> Beverly.li@live.com</a>
-							<br />
-							<a href="https://www.github.com/beverlily" target="_blank"><i class="icon fab fa-github"></i> www.github.com/beverlily</a>
-							<br />
-							<br />
-						</div>
-						<a id="email-button" class="button" href="mailto:beverly.li@live.com">
-							<span id="email-button-icon"><i class="icon fas fa-envelope"></i></span> Message Me
-						</a>
-					</div>
-					<div class="bigStars">
-						<i id="star9" class="fas fa-star"></i>
-						<i id="star10" class="fas fa-star"></i>
-						<i id="star11" class="fas fa-star"></i>
-					</div>
-					<div id="cloud3" class="cloud"></div>
-				</div>
-			</section>
-	   	</main>
-	   	<footer id="footer" class="flex-container" tabindex="0">
-			<div class="page-wrapper">
-				<h2 class="hidden">Main Footer</h2>
-			  	<p class="copyright">&copy; 2019 Beverly Li</p>
-			</div>
-	   	</footer>
-	   	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-	   	<script src="script.js"></script>
-    </body>
+
+<head>
+    <title>Beverly Li: Full Stack Web Developer</title>
+    <meta charset="utf-8" />
+    <link rel="icon" href="images/bluelogo.png">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <meta name="viewport" content="width=device-width">
+</head>
+
+<body>
+    <a id="skip-to-main" class="hidden" href="#main">Skip to main content</a>
+    <header id="header">
+        <div id="header-content" class="page-wrapper flex-container">
+            <div id="header-logo" class="flex-container">
+                <a href=""><img src="images/logo.png" alt="" /></a>
+                <h1>BEVERLY LI
+                    <span class="small-title">Full Stack Web Developer</span>
+                </h1>
+            </div>
+            <nav id="header-nav">
+                <h2 class="hidden">Main Navigation</h2>
+                <div id="hamburger-menu-icon">
+                    <i class="fa fa-bars"></i>
+                </div>
+                <ul id="main-nav-links">
+                    <li><a href="#" class="main-nav-link" data-link="#welcome">Home</a></li>
+                    <li><a href="#" class="main-nav-link" data-link="#projects">Projects</a></li>
+                    <li><a href="#" class="main-nav-link" data-link="#skills">Skills</a></li>
+                    <li><a href="#" class="main-nav-link" data-link="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div id="contact-icons">
+                <a href="https://www.github.com/beverlily" target="_blank" aria-label="Visit Beverly's Github"><i
+                        class="fab fa-github" aria-hidden="true" title="Visit Beverly's Github"></i></a>
+                <a href="mailto:beverly.li@live.com" aria-label="Email Beverly">
+                    <i class="icon fas fa-envelope last" aria-hidden="true" title="Email Beverly"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <section id="welcome">
+            <div class="page-wrapper">
+                <div id="welcome-content" class="main-content">
+                    <div id="name">Beverly Li</div>
+                    <div id="description">
+                        Hi, I'm Beverly! I'm a full stack web developer in Toronto.
+                        <br />
+                        I love to code beautiful and functional websites.
+                    </div>
+                </div>
+                <div id="moon"></div>
+                <div id="clouds">
+                    <div class="cloud" id="cloud1"></div>
+                    <div class="cloud" id="cloud2"></div>
+                </div>
+                <div class="bigStars">
+                    <i id="star1" class="fas fa-star"></i>
+                    <i id="star2" class="fas fa-star"></i>
+                    <i id="star3" class="fas fa-star"></i>
+                </div>
+            </div>
+            <button id="scroll-down-arrow"><i class="fas fa-chevron-down"><span class="hidden">scroll
+                        down</span></i></button>
+        </section>
+        <section id="projects">
+            <div class="page-wrapper">
+                <div id="project-content" class="main-content">
+                    <h2 class="fade">Projects</h2>
+                    <br />
+                    <ul id="project-list">
+                        <li class="project flex-container fade">
+                            <a href="https://makeupstory.azurewebsites.net/" target="_blank">
+                                <img src="images/projects/makeupstory.png" alt="" title="Visit Website" />
+                            </a>
+                            <div class="project-information">
+                                <h3>MakeupStory</h3>
+                                <div class="technologies">
+                                    C# / ASP.NET / MSSQL / HTML5 / CSS3
+                                </div>
+                                <div class="project-links">
+                                    <a href="https://makeupstory.azurewebsites.net/" target="_blank"><i
+                                            class="icon fas fa-globe-americas"></i> Visit the Website </a>
+                                    <a href="https://www.github.com/beverlily/MakeupStory" target="_blank"><i
+                                            class="icon fab fa-github"></i> View on Github </a>
+                                </div>
+                                <br />
+                                <div>
+                                    <h4 class="hidden">Description</h4>
+                                    <p>
+                                        MakeupStory is a makeup CMS that allows users to keep track of the
+                                        makeup products and makeup brands that they have purchased from. Users can give
+                                        ratings, recommend products, as well as keep track of when they opened a makeup
+                                        product. A useful feature of this application is that it automatically
+                                        calculates the expiry date of makeup products so users know when their makeup
+                                        products are about to expire or have expired.
+                                    </p>
+                                    <br />
+                                    <h4>Technology</h4>
+                                    <p>
+                                        This was an individual project built in ASP.NET MVC 5. Helpers were implemented
+                                        to help reduce redundant code in the views.
+                                        As well, a search feature was implemented so that users can easily look up their
+                                        makeup products and brands.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="project flex-container fade">
+                            <div class="project-information">
+                                <h3>A Rainy Night in Winter</h3>
+                                <div class="technologies">
+                                    JavaScript / JQuery / CSS3 / HTML5
+                                </div>
+                                <div class="project-links">
+                                    <a href="http://rainy-night.beverlyli.com" target="_blank"><i
+                                            class="icon fas fa-globe-americas"></i> Visit the Website </a>
+                                    <a href="https://www.github.com/beverlily/A-Rainy-Night-in-Winter"
+                                        target="_blank"><i class="icon fab fa-github"></i> View on Github </a>
+                                </div>
+                                <br />
+                                <div>
+                                    <h4 class="hidden">Description</h4>
+                                    <p>
+                                        A Rainy Night in Winter is a simple and fun catch game. It's a rainy night in
+                                        winter and legend has it that
+                                        rain in the winter brings luck. The goal of this game is for users to catch as
+                                        many raindrops as they can.
+                                    </p>
+                                    <br />
+                                    <h4>Technology</h4>
+                                    <p>
+                                        This was an individual project coded in HTML5, CSS3, JavaScript, and JQuery with
+                                        a focus on implementing CSS animations.
+                                    </p>
+                                </div>
+                            </div>
+                            <a href="http://rainy-night.beverlyli.com" target="_blank">
+                                <img src="images/projects/rainynight.png" alt="" title="Visit Website" />
+                            </a>
+                        </li>
+                        <li class="project flex-container fade">
+                            <a href="http://delanh.com/tollo/" target="_blank">
+                                <img src="images/projects/tollo.jpg" alt="" title="Visit Website" />
+                            </a>
+                            <div class="project-information">
+                                <h3>Tollo</h3>
+                                <div class="technologies">
+                                    PHP / MySQL / JavaScript / JQuery / Bootstrap / HTML / CSS
+                                </div>
+                                <div class="project-links">
+                                    <a href="http://delanh.com/tollo/" target="_blank"><i
+                                            class="icon fas fa-globe-americas"></i> Visit the Website </a>
+                                    <a href="https://www.github.com/beverlily/Tollo" target="_blank"><i
+                                            class="icon fab fa-github"></i> View on Github </a>
+                                </div>
+                                <br />
+                                <div>
+                                    <h4 class="hidden">Description</h4>
+                                    <p>
+                                        Tollo is a fitness application for weight-lifting, strength-training, and
+                                        fitness.
+                                        It allows users to save routines, set goals, and note their progress.
+                                    </p>
+                                    <br />
+                                    <h4>Technology</h4>
+                                    <p>
+                                        This was a group project coded in PHP, with MySQL for the database.
+                                        I was responsible for the goals, measurements, and exercises feature.
+                                        For my features, I used JQuery Ajax for a smoother user experience.
+                                    </p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="project flex-container fade">
+                            <div class="project-information">
+                                <h3>Spice Girls + 1 Restaurant</h3>
+                                <div class="technologies">
+                                    JavaScript / JQuery / HTML / CSS
+                                </div>
+                                <div class="project-links">
+                                    <a href="http://restaurant.beverlyli.com" target="_blank"><i
+                                            class="icon fas fa-globe-americas"></i> Visit the Website </a>
+                                    <a href="https://www.github.com/beverlily/Spice-Girls-Restaurant" target="_blank"><i
+                                            class="icon fab fa-github"></i> View on Github </a>
+                                </div>
+                                <br />
+                                <div>
+                                    <h4 class="hidden">Description</h4>
+                                    <p>
+                                        This is a website for the Spice Girls + 1 restaurant. This restaurant serves
+                                        spicy and healthy dishes.
+                                    </p>
+                                    <br />
+                                    <h4>Technology</h4>
+                                    <p>
+                                        This was a group project coded in JavaScript and JQuery. I coded the about page,
+                                        gift card page, and locations page.
+                                        Regular expressions were used for form validation in the gift card page. For the
+                                        locations page, Google Maps API was used.
+                                    </p>
+                                </div>
+                            </div>
+                            <a href="http://restaurant.beverlyli.com" target="_blank">
+                                <img src="images/projects/spicegirls.png" alt="" title="Visit Website" />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bigStars">
+                    <i id="star4" class="fas fa-star"></i>
+                    <i id="star5" class="fas fa-star"></i>
+                    <i id="star6" class="fas fa-star"></i>
+                </div>
+            </div>
+        </section>
+        <section id="skills">
+            <div class="page-wrapper">
+                <div id="skills-content" class="main-content fade">
+                    <h2>Skills</h2>
+                    <ul id="skills-list" class="flex-container">
+                        <li><img src="images/skills/javascript.svg" title="JavaScript" alt="JavaScript logo" /></li>
+                        <li><img src="images/skills/net.svg" title="ASP.NET" class="white-background"
+                                alt="Microsoft .Net logo" /></li>
+                        <li><img src="images/skills/php.svg" title="PHP" alt="PHP logo" /></li>
+                        <li><img src="images/skills/html-5.svg" title="HTML5" alt="HTML5 logo" /></li>
+                        <li><img src="images/skills/css-3.svg" title="CSS3" alt="CSS3 logo" />
+                        <li><img src="images/skills/jquery.svg" title="jQuery" class="white-background"
+                                alt="jQuery logo" />
+                        <li><img src="images/skills/mysql.svg" title="MySQL" class="white-background"
+                                alt="MySQL logo" /></li>
+                        <li><img src="images/skills/microsoft-sql-server.svg" title="Microsoft SQL Server"
+                                class="white-background" alt="MSSQL logo" /></li>
+                        <li><img src="images/skills/oracle.svg" title="Oracle Database" class="white-background"
+                                alt="Oracle logo" /></li>
+                        <li><img src="images/skills/bootstrap-4.svg" title="Bootstrap 4" alt="Bootstrap4 4 logo" />
+                        <li><img src="images/skills/git.svg" title="Git" alt="Git logo" class="white-background" /></li>
+                        <li><img src="images/skills/adobe-photoshop.svg" title="Adobe Photoshop"
+                                alt="Adobe Photoshop logo" /></li>
+                        <li><img src="images/skills/adobe-illustrator.svg" title="Adobe Illustrator"
+                                alt="Adobe Illustrator logo" /></li>
+                        <li><img src="images/skills/adobe-xd.svg" title="Adobe Xd" alt="Adobe Xd logo" /></li>
+                    </ul>
+                </div>
+                <div class="bigStars">
+                    <i id="star7" class="fas fa-star"></i>
+                    <i id="star8" class="fas fa-star"></i>
+                </div>
+            </div>
+        </section>
+        <section id="contact">
+            <div class="page-wrapper">
+                <div id="contact-content" class="main-content fade">
+                    <h2>Contact Me</h2>
+                    <p>Feel free to contact me anytime!</p>
+                    <div>
+                        <a href="mailto:beverly.li@live.com"><i class="icon fas fa-envelope"></i>
+                            Beverly.li@live.com</a>
+                        <br />
+                        <a href="https://www.github.com/beverlily" target="_blank"><i class="icon fab fa-github"></i>
+                            www.github.com/beverlily</a>
+                        <br />
+                        <br />
+                    </div>
+                    <a id="email-button" class="button" href="mailto:beverly.li@live.com">
+                        <span id="email-button-icon"><i class="icon fas fa-envelope"></i></span> Message Me
+                    </a>
+                </div>
+                <div class="bigStars">
+                    <i id="star9" class="fas fa-star"></i>
+                    <i id="star10" class="fas fa-star"></i>
+                    <i id="star11" class="fas fa-star"></i>
+                </div>
+                <div id="cloud3" class="cloud"></div>
+            </div>
+        </section>
+    </main>
+    <footer id="footer" class="flex-container" tabindex="0">
+        <div class="page-wrapper">
+            <h2 class="hidden">Main Footer</h2>
+            <p id="copyright" class="copyright">&copy; 2019 Beverly Li</p>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <script src="script.js"></script>
+</body>
+
 </html>
