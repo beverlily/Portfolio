@@ -3,6 +3,7 @@ const headerHeight = header.outerHeight();
 const scrollArrow = $("#scroll-down-arrow");
 
 const randomizeNumber = (min, max) => Math.random() * (max - min) + min;
+const randomizeValueFromList = (list) => list[Math.floor(Math.random() * list.length)];
 
 const makeStars = (maxTop, maxStars) => {
   for (let stars = 0; stars < maxStars; stars++) {
@@ -19,13 +20,11 @@ const makeStars = (maxTop, maxStars) => {
 
     // possible glow speeds
     const glowSpeedValues = ["1s", "1.5s", "2s"];
-    const glowSpeed =
-      glowSpeedValues[Math.floor(Math.random() * glowSpeedValues.length)];
+    const glowSpeed = randomizeValueFromList(glowSpeedValues);
 
     // possible opacities
     const opacityValues = [0.5, 0.75, 1];
-    const opacity =
-      opacityValues[Math.floor(Math.random() * opacityValues.length)];
+    const opacity = randomizeValueFromList(opacityValues);
 
     const star = $(document.createElement("div"));
     star.addClass("star");
