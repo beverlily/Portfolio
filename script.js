@@ -23,7 +23,7 @@ const makeStars = (maxTop, maxStars) => {
       glowSpeedValues[Math.floor(Math.random() * glowSpeedValues.length)];
 
     // possible opacities
-    const opacityValues = ["0.5", "0.75", "1"];
+    const opacityValues = [0.5, 0.75, 1];
     const opacity =
       opacityValues[Math.floor(Math.random() * opacityValues.length)];
 
@@ -41,7 +41,7 @@ const makeStars = (maxTop, maxStars) => {
 
     $("#main").append(star);
   }
-}; // end of makeStar
+};
 
 const generateStars = () => {
   // generates stars for the welcome section of page
@@ -67,8 +67,9 @@ const fadeInHeader = () => {
     header.addClass("header");
   } else {
     // background of header will be transparent at the top of the page for non responsive
-    if (!$("#main-nav-links").hasClass("responsive-menu"))
+    if (!$("#main-nav-links").hasClass("responsive-menu")) {
       header.removeClass("header");
+    }
     scrollArrow.fadeIn();
   }
 };
@@ -80,7 +81,9 @@ const fadeInSections = () => {
     const sectionTop = $(this).offset().top;
     const windowBottom = $(window).scrollTop() + $(window).height();
 
-    if (sectionTop < windowBottom) $(this).animate({ opacity: "1" }, 750);
+    if (sectionTop < windowBottom) {
+      $(this).animate({ opacity: 1 }, 750);
+    }
   });
 };
 
@@ -114,22 +117,23 @@ $(window).scroll(function () {
 });
 
 const addEmailAnimation = () => {
+  const emailButton =  $("#email-button");
+  const emailButtonIcon = $("#email-button-icon");
+
   // envelope opens on mouse enter, closes on mouse leave
-  $("#email-button").mouseenter(() =>
-    $("#email-button-icon").html("<i class='fas fa-envelope-open'></i>")
+  emailButton.mouseenter(() =>
+    emailButtonIcon.html("<i class='fas fa-envelope-open'></i>")
   );
 
-  $("#email-button").mouseleave(() =>
-    $("#email-button-icon").html("<i class='fas fa-envelope'></i>")
+  emailButton.mouseleave(() =>
+    emailButtonIcon.html("<i class='fas fa-envelope'></i>")
   );
 };
 
 const hideSections = () => {
   // when page loads, hides main content and only shows welcome section
   $(".fade").each(function () {
-    $(this).css({
-      opacity: 0,
-    });
+    $(this).css({ opacity: 0 });
   });
 };
 
