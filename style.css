@@ -105,8 +105,8 @@ section h2 {
 
 /*2. GENERAL CLASSES*/
 .page-wrapper {
-  max-width: 1200px;
   margin: 0 auto;
+  max-width: 85%;
 }
 
 .flex-container {
@@ -404,7 +404,7 @@ section h2 {
 /*10. WELCOME SECTION*/
 #welcome {
   font-size: 1.25rem;
-  padding: 100px 100px 0 100px;
+  padding: 125px 100px 0 100px;
 }
 
 #name {
@@ -660,6 +660,7 @@ section h2 {
 
   #hamburger-menu-icon {
     display: block;
+    width: 50px;
   }
 }
 
@@ -762,6 +763,10 @@ section h2 {
 }
 
 @media screen and (max-width: 500px) {
+  h1 {
+    display: none;
+  }
+
   .small-title {
     font-size: 0.6rem;
   }
