@@ -206,7 +206,7 @@ section h2 {
 
 #moon {
   position: relative;
-  top: -200px;
+  top: -205px;
   left: 58%;
   box-shadow: 50px 30px 0 15px #fde08a;
   border-radius: 50%;
@@ -404,7 +404,7 @@ section h2 {
 /*10. WELCOME SECTION*/
 #welcome {
   font-size: 1.25rem;
-  padding: 125px 100px 0 100px;
+  padding: 18vh 100px 0 100px;
 }
 
 #name {
